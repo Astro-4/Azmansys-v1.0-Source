@@ -57,15 +57,6 @@
             this.updateBookingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteBookingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchFlightsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btRoomB = new System.Windows.Forms.Button();
-            this.panFloorLayout = new System.Windows.Forms.Panel();
-            this.btRoomG = new System.Windows.Forms.Button();
-            this.btRoomE = new System.Windows.Forms.Button();
-            this.btRoomC = new System.Windows.Forms.Button();
-            this.btRoomA = new System.Windows.Forms.Button();
-            this.btRoomH = new System.Windows.Forms.Button();
-            this.btRoomF = new System.Windows.Forms.Button();
-            this.btRoomD = new System.Windows.Forms.Button();
             this.cbFloor = new System.Windows.Forms.ComboBox();
             this.cbBuilding = new System.Windows.Forms.ComboBox();
             this.lbCustContact = new System.Windows.Forms.Label();
@@ -98,6 +89,15 @@
             this.tbCustomer = new System.Windows.Forms.TextBox();
             this.tbCost = new System.Windows.Forms.TextBox();
             this.lbBookingInfo = new System.Windows.Forms.Label();
+            this.panFloorLayout = new System.Windows.Forms.Panel();
+            this.btRoomG = new System.Windows.Forms.Button();
+            this.btRoomE = new System.Windows.Forms.Button();
+            this.btRoomC = new System.Windows.Forms.Button();
+            this.btRoomA = new System.Windows.Forms.Button();
+            this.btRoomH = new System.Windows.Forms.Button();
+            this.btRoomF = new System.Windows.Forms.Button();
+            this.btRoomD = new System.Windows.Forms.Button();
+            this.btRoomB = new System.Windows.Forms.Button();
             this.panClock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgRoomBookingsSummary)).BeginInit();
             this.mainMenu.SuspendLayout();
@@ -337,7 +337,7 @@
             // updateBookingToolStripMenuItem
             // 
             this.updateBookingToolStripMenuItem.Name = "updateBookingToolStripMenuItem";
-            this.updateBookingToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.updateBookingToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
             this.updateBookingToolStripMenuItem.Text = "Update Booking";
             // 
             // deleteBookingToolStripMenuItem
@@ -351,136 +351,6 @@
             this.searchFlightsToolStripMenuItem.Name = "searchFlightsToolStripMenuItem";
             this.searchFlightsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.searchFlightsToolStripMenuItem.Text = "Search Flights";
-            // 
-            // btRoomB
-            // 
-            this.btRoomB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btRoomB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btRoomB.Location = new System.Drawing.Point(207, 6);
-            this.btRoomB.Margin = new System.Windows.Forms.Padding(4);
-            this.btRoomB.Name = "btRoomB";
-            this.btRoomB.Size = new System.Drawing.Size(147, 123);
-            this.btRoomB.TabIndex = 9;
-            this.btRoomB.UseVisualStyleBackColor = true;
-            this.btRoomB.Click += new System.EventHandler(this.btRoomB_Click);
-            // 
-            // panFloorLayout
-            // 
-            this.panFloorLayout.BackgroundImage = global::CUESYSv._01.Properties.Resources.GROUND_FLOOR;
-            this.panFloorLayout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panFloorLayout.Controls.Add(this.btRoomG);
-            this.panFloorLayout.Controls.Add(this.btRoomE);
-            this.panFloorLayout.Controls.Add(this.btRoomC);
-            this.panFloorLayout.Controls.Add(this.btRoomA);
-            this.panFloorLayout.Controls.Add(this.btRoomH);
-            this.panFloorLayout.Controls.Add(this.btRoomF);
-            this.panFloorLayout.Controls.Add(this.btRoomD);
-            this.panFloorLayout.Controls.Add(this.btRoomB);
-            this.panFloorLayout.Location = new System.Drawing.Point(115, 111);
-            this.panFloorLayout.Margin = new System.Windows.Forms.Padding(4);
-            this.panFloorLayout.Name = "panFloorLayout";
-            this.panFloorLayout.Size = new System.Drawing.Size(803, 384);
-            this.panFloorLayout.TabIndex = 10;
-            // 
-            // btRoomG
-            // 
-            this.btRoomG.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btRoomG.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btRoomG.Location = new System.Drawing.Point(548, 254);
-            this.btRoomG.Margin = new System.Windows.Forms.Padding(4);
-            this.btRoomG.Name = "btRoomG";
-            this.btRoomG.Size = new System.Drawing.Size(147, 123);
-            this.btRoomG.TabIndex = 16;
-            this.btRoomG.UseVisualStyleBackColor = true;
-            this.btRoomG.Click += new System.EventHandler(this.btRoomG_Click);
-            // 
-            // btRoomE
-            // 
-            this.btRoomE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btRoomE.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btRoomE.Location = new System.Drawing.Point(400, 254);
-            this.btRoomE.Margin = new System.Windows.Forms.Padding(4);
-            this.btRoomE.Name = "btRoomE";
-            this.btRoomE.Size = new System.Drawing.Size(147, 123);
-            this.btRoomE.TabIndex = 15;
-            this.btRoomE.UseVisualStyleBackColor = true;
-            this.btRoomE.Click += new System.EventHandler(this.btRoomE_Click);
-            // 
-            // btRoomC
-            // 
-            this.btRoomC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btRoomC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btRoomC.Location = new System.Drawing.Point(255, 254);
-            this.btRoomC.Margin = new System.Windows.Forms.Padding(4);
-            this.btRoomC.Name = "btRoomC";
-            this.btRoomC.Size = new System.Drawing.Size(147, 123);
-            this.btRoomC.TabIndex = 14;
-            this.btRoomC.UseVisualStyleBackColor = true;
-            this.btRoomC.Click += new System.EventHandler(this.btRoomC_Click);
-            // 
-            // btRoomA
-            // 
-            this.btRoomA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btRoomA.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btRoomA.Location = new System.Drawing.Point(107, 254);
-            this.btRoomA.Margin = new System.Windows.Forms.Padding(4);
-            this.btRoomA.Name = "btRoomA";
-            this.btRoomA.Size = new System.Drawing.Size(147, 123);
-            this.btRoomA.TabIndex = 13;
-            this.btRoomA.UseVisualStyleBackColor = true;
-            this.btRoomA.Click += new System.EventHandler(this.btRoomA_Click);
-            // 
-            // btRoomH
-            // 
-            this.btRoomH.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btRoomH.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btRoomH.Location = new System.Drawing.Point(648, 6);
-            this.btRoomH.Margin = new System.Windows.Forms.Padding(4);
-            this.btRoomH.Name = "btRoomH";
-            this.btRoomH.Size = new System.Drawing.Size(147, 123);
-            this.btRoomH.TabIndex = 12;
-            this.btRoomH.UseVisualStyleBackColor = true;
-            this.btRoomH.Click += new System.EventHandler(this.btRoomH_Click);
-            // 
-            // btRoomF
-            // 
-            this.btRoomF.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btRoomF.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btRoomF.Location = new System.Drawing.Point(500, 6);
-            this.btRoomF.Margin = new System.Windows.Forms.Padding(4);
-            this.btRoomF.Name = "btRoomF";
-            this.btRoomF.Size = new System.Drawing.Size(147, 123);
-            this.btRoomF.TabIndex = 11;
-            this.btRoomF.UseVisualStyleBackColor = true;
-            this.btRoomF.Click += new System.EventHandler(this.btRoomF_Click);
-            // 
-            // btRoomD
-            // 
-            this.btRoomD.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btRoomD.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btRoomD.Location = new System.Drawing.Point(355, 6);
-            this.btRoomD.Margin = new System.Windows.Forms.Padding(4);
-            this.btRoomD.Name = "btRoomD";
-            this.btRoomD.Size = new System.Drawing.Size(147, 123);
-            this.btRoomD.TabIndex = 10;
-            this.btRoomD.UseVisualStyleBackColor = true;
-            this.btRoomD.Click += new System.EventHandler(this.btRoomD_Click);
             // 
             // cbFloor
             // 
@@ -799,6 +669,136 @@
             this.lbBookingInfo.Size = new System.Drawing.Size(157, 31);
             this.lbBookingInfo.TabIndex = 32;
             this.lbBookingInfo.Text = "xxxxxxxxxxx";
+            // 
+            // panFloorLayout
+            // 
+            this.panFloorLayout.BackgroundImage = global::CUESYSv._01.Properties.Resources.GROUND_FLOOR;
+            this.panFloorLayout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panFloorLayout.Controls.Add(this.btRoomG);
+            this.panFloorLayout.Controls.Add(this.btRoomE);
+            this.panFloorLayout.Controls.Add(this.btRoomC);
+            this.panFloorLayout.Controls.Add(this.btRoomA);
+            this.panFloorLayout.Controls.Add(this.btRoomH);
+            this.panFloorLayout.Controls.Add(this.btRoomF);
+            this.panFloorLayout.Controls.Add(this.btRoomD);
+            this.panFloorLayout.Controls.Add(this.btRoomB);
+            this.panFloorLayout.Location = new System.Drawing.Point(115, 111);
+            this.panFloorLayout.Margin = new System.Windows.Forms.Padding(4);
+            this.panFloorLayout.Name = "panFloorLayout";
+            this.panFloorLayout.Size = new System.Drawing.Size(803, 384);
+            this.panFloorLayout.TabIndex = 10;
+            // 
+            // btRoomG
+            // 
+            this.btRoomG.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btRoomG.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btRoomG.Location = new System.Drawing.Point(548, 254);
+            this.btRoomG.Margin = new System.Windows.Forms.Padding(4);
+            this.btRoomG.Name = "btRoomG";
+            this.btRoomG.Size = new System.Drawing.Size(147, 123);
+            this.btRoomG.TabIndex = 16;
+            this.btRoomG.UseVisualStyleBackColor = true;
+            this.btRoomG.Click += new System.EventHandler(this.btRoomG_Click);
+            // 
+            // btRoomE
+            // 
+            this.btRoomE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btRoomE.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btRoomE.Location = new System.Drawing.Point(400, 254);
+            this.btRoomE.Margin = new System.Windows.Forms.Padding(4);
+            this.btRoomE.Name = "btRoomE";
+            this.btRoomE.Size = new System.Drawing.Size(147, 123);
+            this.btRoomE.TabIndex = 15;
+            this.btRoomE.UseVisualStyleBackColor = true;
+            this.btRoomE.Click += new System.EventHandler(this.btRoomE_Click);
+            // 
+            // btRoomC
+            // 
+            this.btRoomC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btRoomC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btRoomC.Location = new System.Drawing.Point(255, 254);
+            this.btRoomC.Margin = new System.Windows.Forms.Padding(4);
+            this.btRoomC.Name = "btRoomC";
+            this.btRoomC.Size = new System.Drawing.Size(147, 123);
+            this.btRoomC.TabIndex = 14;
+            this.btRoomC.UseVisualStyleBackColor = true;
+            this.btRoomC.Click += new System.EventHandler(this.btRoomC_Click);
+            // 
+            // btRoomA
+            // 
+            this.btRoomA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btRoomA.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btRoomA.Location = new System.Drawing.Point(107, 254);
+            this.btRoomA.Margin = new System.Windows.Forms.Padding(4);
+            this.btRoomA.Name = "btRoomA";
+            this.btRoomA.Size = new System.Drawing.Size(147, 123);
+            this.btRoomA.TabIndex = 13;
+            this.btRoomA.UseVisualStyleBackColor = true;
+            this.btRoomA.Click += new System.EventHandler(this.btRoomA_Click);
+            // 
+            // btRoomH
+            // 
+            this.btRoomH.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btRoomH.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btRoomH.Location = new System.Drawing.Point(648, 6);
+            this.btRoomH.Margin = new System.Windows.Forms.Padding(4);
+            this.btRoomH.Name = "btRoomH";
+            this.btRoomH.Size = new System.Drawing.Size(147, 123);
+            this.btRoomH.TabIndex = 12;
+            this.btRoomH.UseVisualStyleBackColor = true;
+            this.btRoomH.Click += new System.EventHandler(this.btRoomH_Click);
+            // 
+            // btRoomF
+            // 
+            this.btRoomF.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btRoomF.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btRoomF.Location = new System.Drawing.Point(500, 6);
+            this.btRoomF.Margin = new System.Windows.Forms.Padding(4);
+            this.btRoomF.Name = "btRoomF";
+            this.btRoomF.Size = new System.Drawing.Size(147, 123);
+            this.btRoomF.TabIndex = 11;
+            this.btRoomF.UseVisualStyleBackColor = true;
+            this.btRoomF.Click += new System.EventHandler(this.btRoomF_Click);
+            // 
+            // btRoomD
+            // 
+            this.btRoomD.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btRoomD.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btRoomD.Location = new System.Drawing.Point(355, 6);
+            this.btRoomD.Margin = new System.Windows.Forms.Padding(4);
+            this.btRoomD.Name = "btRoomD";
+            this.btRoomD.Size = new System.Drawing.Size(147, 123);
+            this.btRoomD.TabIndex = 10;
+            this.btRoomD.UseVisualStyleBackColor = true;
+            this.btRoomD.Click += new System.EventHandler(this.btRoomD_Click);
+            // 
+            // btRoomB
+            // 
+            this.btRoomB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btRoomB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btRoomB.Location = new System.Drawing.Point(207, 6);
+            this.btRoomB.Margin = new System.Windows.Forms.Padding(4);
+            this.btRoomB.Name = "btRoomB";
+            this.btRoomB.Size = new System.Drawing.Size(147, 123);
+            this.btRoomB.TabIndex = 9;
+            this.btRoomB.UseVisualStyleBackColor = true;
+            this.btRoomB.Click += new System.EventHandler(this.btRoomB_Click);
             // 
             // Form1
             // 

@@ -88,7 +88,7 @@ namespace CUESYSv._01
         public void insertBooking(string custContact, string airLine,string flightOrigin, string flightDestination, string flightNumber, string seatNumber, string bookingDateTime, string bookingCost, string bookingPaid)
         {
             MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "INSERT INTO `tblBookings` (`custContact`, `airLine`,`flightOrigin`,`flightDestination`, `flightNumber`, `planeSeat`, `bookingDateTime`, `bookingCost`, `bookingPaid`) VALUES (@custContact,@airLine, @flightOrigin, @flightDestination, @flightNumber,@seatNumber, @bookingDateTime, @bookingCost, @bookingPaid);";
+            comm.CommandText = "INSERT INTO `tblBookings` (`custContact`, `airLine`,`flightOrigin`,`flightDestination`, `flightNumber`, `seatNumber`, `bookingDateTime`, `bookingCost`, `bookingPaid`) VALUES (@custContact,@airLine, @flightOrigin, @flightDestination, @flightNumber,@seatNumber, @bookingDateTime, @bookingCost, @bookingPaid);";
             comm.Parameters.AddWithValue("@custContact", custContact);
             comm.Parameters.AddWithValue("@flightOrigin", flightOrigin);
             comm.Parameters.AddWithValue("@flightDestination", flightDestination);
