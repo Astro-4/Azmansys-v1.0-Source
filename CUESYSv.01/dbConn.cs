@@ -7,6 +7,7 @@ using MySql.Data;
 using MySql;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System;
 
 namespace CUESYSv._01
 {
@@ -84,11 +85,13 @@ namespace CUESYSv._01
             comm.ExecuteNonQuery();
             connClose();
         }
-        public void insertBooking(string custContact, string airLine, string flightNumber, string seatNumber, string bookingDateTime, string bookingCost, string bookingPaid)
+        public void insertBooking(string custContact, string airLine,string flightOrigin, string flightDestination, string flightNumber, string seatNumber, string bookingDateTime, string bookingCost, string bookingPaid)
         {
             MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "INSERT INTO `tblBookings` (`custContact`, `airLine`, `flightNumber`, `planeSeat`, `bookingDateTime`, `bookingCost`, `bookingPaid`) VALUES (@custContact, @bookingBuilding, @bookingFloor, @bookingRoom, @bookingDateTime, @bookingCost, @bookingPaid);";
+            comm.CommandText = "INSERT INTO `tblBookings` (`custContact`, `airLine`,`flightOrigin`,`flightDestination`, `flightNumber`, `planeSeat`, `bookingDateTime`, `bookingCost`, `bookingPaid`) VALUES (@custContact,@airLine, @flightOrigin, @flightDestination, @flightNumber,@seatNumber, @bookingDateTime, @bookingCost, @bookingPaid);";
             comm.Parameters.AddWithValue("@custContact", custContact);
+            comm.Parameters.AddWithValue("@flightOrigin", flightOrigin);
+            comm.Parameters.AddWithValue("@flightDestination", flightDestination);
             comm.Parameters.AddWithValue("@airLine", airLine);
             comm.Parameters.AddWithValue("@flightNumber", flightNumber);
             comm.Parameters.AddWithValue("@seatNumber", seatNumber);
@@ -102,7 +105,7 @@ namespace CUESYSv._01
         {
             connOpen();
             MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "DELETE FROM `tblBookings` WHERE `tblBookings`.`bookingID` = @id";
+            comm.CommandText = "DELETE FROM `tblBookings` WHERE `tblBookings`.`id` = @id";
             comm.Parameters.AddWithValue("@id", id);
             comm.ExecuteNonQuery();
             connClose();
@@ -111,10 +114,15 @@ namespace CUESYSv._01
         {
             connOpen();
             MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "DELETE FROM `tblCustomer` WHERE `tblCustomer`.`custID` = @id";
+            comm.CommandText = "DELETE FROM `tblCustomer` WHERE `tblCustomer`.`id` = @id";
             comm.Parameters.AddWithValue("@id", id);
             comm.ExecuteNonQuery();
             connClose();
+        }
+
+        internal void insertBooking(string text1, string text2, string varFloor, string varRoom, string varDateTime, string text3, string varPaid)
+        {
+            throw new NotImplementedException();
         }
     }
 }

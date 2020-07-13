@@ -52,6 +52,7 @@
             this.deleteCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flightsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookFlightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.makePaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewBookingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateBookingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteBookingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -97,8 +98,6 @@
             this.tbCustomer = new System.Windows.Forms.TextBox();
             this.tbCost = new System.Windows.Forms.TextBox();
             this.lbBookingInfo = new System.Windows.Forms.Label();
-            this.printBookingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.makePaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panClock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgRoomBookingsSummary)).BeginInit();
             this.mainMenu.SuspendLayout();
@@ -283,21 +282,21 @@
             // createCustomerToolStripMenuItem
             // 
             this.createCustomerToolStripMenuItem.Name = "createCustomerToolStripMenuItem";
-            this.createCustomerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.createCustomerToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
             this.createCustomerToolStripMenuItem.Text = "Add Customer";
             this.createCustomerToolStripMenuItem.Click += new System.EventHandler(this.createCustomerToolStripMenuItem_Click);
             // 
             // viewCustomersToolStripMenuItem
             // 
             this.viewCustomersToolStripMenuItem.Name = "viewCustomersToolStripMenuItem";
-            this.viewCustomersToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.viewCustomersToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
             this.viewCustomersToolStripMenuItem.Text = "View Customers";
             this.viewCustomersToolStripMenuItem.Click += new System.EventHandler(this.viewCustomersToolStripMenuItem_Click);
             // 
             // deleteCustomerToolStripMenuItem
             // 
             this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
-            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
             this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
             // 
             // flightsToolStripMenuItem
@@ -320,11 +319,16 @@
             this.bookFlightToolStripMenuItem.Text = "Book Flight";
             this.bookFlightToolStripMenuItem.Click += new System.EventHandler(this.bookRoomToolStripMenuItem_Click);
             // 
+            // makePaymentToolStripMenuItem
+            // 
+            this.makePaymentToolStripMenuItem.Name = "makePaymentToolStripMenuItem";
+            this.makePaymentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.makePaymentToolStripMenuItem.Text = "Make Payment";
+            // 
             // viewBookingsToolStripMenuItem
             // 
             this.viewBookingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.updateBookingToolStripMenuItem,
-            this.printBookingToolStripMenuItem});
+            this.updateBookingToolStripMenuItem});
             this.viewBookingsToolStripMenuItem.Name = "viewBookingsToolStripMenuItem";
             this.viewBookingsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.viewBookingsToolStripMenuItem.Text = "View Bookings";
@@ -796,18 +800,6 @@
             this.lbBookingInfo.TabIndex = 32;
             this.lbBookingInfo.Text = "xxxxxxxxxxx";
             // 
-            // printBookingToolStripMenuItem
-            // 
-            this.printBookingToolStripMenuItem.Name = "printBookingToolStripMenuItem";
-            this.printBookingToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.printBookingToolStripMenuItem.Text = "Print Booking";
-            // 
-            // makePaymentToolStripMenuItem
-            // 
-            this.makePaymentToolStripMenuItem.Name = "makePaymentToolStripMenuItem";
-            this.makePaymentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.makePaymentToolStripMenuItem.Text = "Make Payment";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -942,7 +934,6 @@
         private System.Windows.Forms.ToolStripMenuItem deleteBookingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchFlightsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem makePaymentToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem printBookingToolStripMenuItem;
     }
 }
 

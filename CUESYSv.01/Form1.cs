@@ -286,7 +286,9 @@ namespace CUESYSv._01
 
         private void bookRoomToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            resetControls("Book Room");devLogs("book room request");
+            Form f2 = new Form2();
+            f2.Visible = true;
+            devLogs("book room request");
         }
 
         private void btRoomA_Click(object sender, EventArgs e)
