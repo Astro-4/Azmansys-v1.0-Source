@@ -398,6 +398,18 @@ namespace CUESYSv._01
             }
             resetControls("landing");
         }
+
+        private void deleteBookingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string id = dgRoomBookingsSummary.SelectedCells[0].Value.ToString();
+            mysqlConn.deleteBooking(id);
+        }
+
+        private void deleteCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string id = dgRoomBookingsSummary.SelectedCells[0].Value.ToString();
+            mysqlConn.deleteCustomer(id);
+        }
         ///// EVENTS END ///////////////////////////////////////////////////////////
     }
 }

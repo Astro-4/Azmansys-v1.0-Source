@@ -296,8 +296,9 @@
             // deleteCustomerToolStripMenuItem
             // 
             this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
-            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
+            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
+            this.deleteCustomerToolStripMenuItem.Click += new System.EventHandler(this.deleteCustomerToolStripMenuItem_Click);
             // 
             // flightsToolStripMenuItem
             // 
@@ -345,6 +346,7 @@
             this.deleteBookingToolStripMenuItem.Name = "deleteBookingToolStripMenuItem";
             this.deleteBookingToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.deleteBookingToolStripMenuItem.Text = "Delete Booking";
+            this.deleteBookingToolStripMenuItem.Click += new System.EventHandler(this.deleteBookingToolStripMenuItem_Click);
             // 
             // searchFlightsToolStripMenuItem
             // 

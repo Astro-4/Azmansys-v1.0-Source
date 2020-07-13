@@ -109,6 +109,7 @@ namespace CUESYSv._01
             comm.Parameters.AddWithValue("@id", id);
             comm.ExecuteNonQuery();
             connClose();
+            MessageBox.Show("Booking Deleted!");
         }
         public void deleteCustomer(string id)
         {
@@ -118,6 +119,7 @@ namespace CUESYSv._01
             comm.Parameters.AddWithValue("@id", id);
             comm.ExecuteNonQuery();
             connClose();
+            MessageBox.Show("Customer Removed!");
         }
 
         internal void insertBooking(string text1, string text2, string varFloor, string varRoom, string varDateTime, string text3, string varPaid)
